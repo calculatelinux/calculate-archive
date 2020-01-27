@@ -1,0 +1,28 @@
+# Calculate name=#-pop(l)-##-pop(h)-##-push(h)-##-push(l)-##-sum(h,h)-#.#-sum(l,l)-#.2@calculate.source
+#-pop(l)-##-pop(h)-##-push(h)-##-push(l)-#
+[Data Source]
+DisplayName=#-ur_mail-#
+Enabled=true
+
+[Offline]
+StaySynchronized=false
+
+[Refresh]
+Enabled=true
+IntervalMinutes=10
+
+[Authentication]
+Host=#-server(mail.host)-#
+Method=none
+Port=993
+ProxyUid=system-proxy
+RememberPassword=true
+User=#-ur_login-#
+
+[Mail Account]
+BackendName=imapx
+IdentityUid=#-sum(h,h)-#.#-sum(l,l)-#.0@calculate
+NeedsInitialSetup=true
+
+[Security]
+Method=ssl-on-alternate-port

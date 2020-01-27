@@ -1,0 +1,14 @@
+# Calculate format=diff os_install_arch_machine==i686
+diff --git a/style/adwaitastyle.cpp b/style/adwaitastyle.cpp
+index aeeb8ae..c269d51 100644
+--- a/style/adwaitastyle.cpp
++++ b/style/adwaitastyle.cpp
+@@ -403,7 +403,7 @@ void Style::polish(QWidget *widget)
+     }
+ 
+     if (!widget->parent() || !qobject_cast<QWidget *>(widget->parent()) || qobject_cast<QDialog *>(widget) || qobject_cast<QMainWindow *>(widget)) {
+-        addEventFilter(widget);
++        //addEventFilter(widget);
+     }
+ 
+     // base class polishing

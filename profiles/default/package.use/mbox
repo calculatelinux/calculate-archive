@@ -1,0 +1,2 @@
+mail-filter/procmail -mbox
+mail-mta/postfix -mbox

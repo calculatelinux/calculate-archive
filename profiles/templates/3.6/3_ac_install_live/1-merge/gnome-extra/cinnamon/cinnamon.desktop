@@ -1,0 +1,3 @@
+# Calculate format=kde path=/usr/share/applications hr_virtual==virtualbox
+[Desktop Entry]
+Exec=env CLUTTER_PAINT=disable-clipped-redraws /usr/bin/cinnamon-launcher

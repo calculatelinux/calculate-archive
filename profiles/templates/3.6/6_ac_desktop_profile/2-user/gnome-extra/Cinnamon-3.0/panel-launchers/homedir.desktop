@@ -1,0 +1,9 @@
+# Calculate format=kde
+[Desktop Entry]
+Name=Home
+Comment=Home
+Exec=nemo %U
+Icon=user-home
+Terminal=false
+Type=Application
+StartupNotify=false

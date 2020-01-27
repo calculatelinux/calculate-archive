@@ -1,0 +1,23 @@
+# Calculate path=~
+#!/bin/bash
+
+# добавление в доверенные desktop файлы иконки на рабочем столе
+for fn in calculate-community.desktop \
+	calculate-install.desktop \
+	FTP.desktop \
+	gparted.desktop \
+	Home.desktop \
+	README.desktop \
+	Share.desktop \
+	Home-nodomain.desktop 
+do
+	gio set "#-ini(resource.desktop)-#/$fn" "metadata::trust" true &>/dev/null
+done
+
+rm -f ~/.config/autostart/lxqt-desktop.desktop
+if [[ -f /etc/xdg/autostart/lxqt-desktop.desktop ]]
+then
+	:
+	$(sed -nr 's/^Exec=(.*)/\1/p' /etc/xdg/autostart/lxqt-desktop.desktop | tail -1)
+fi
+rm -f ~/.gvfs-trust

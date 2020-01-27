@@ -1,0 +1,4 @@
+# Calculate format=kde path=/usr/share/applications
+[Desktop Entry]
+NotShowIn=KDE
+Categories=Settings;HardwareSettings;Printing;GTK;

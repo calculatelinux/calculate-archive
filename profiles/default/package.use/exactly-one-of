@@ -1,0 +1,38 @@
+# smp? ( exactly-one-of ( kaapi tbb ) )
+sci-libs/vtk tbb
+
+# exactly-one-of ( alsa oss portaudio pulseaudio )
+app-accessibility/julius -pulseaudio
+
+# hcache? ( exactly-one-of ( berkdb gdbm lmdb qdbm tokyocabinet )
+mail-client/mutt -gdbm -lmdb
+
+# exactly-one-of ( expat xml )
+media-libs/libmetalink expat
+
+# exactly-one-of ( openssl nss gnutls )
+net-fs/s3fs openssl
+
+# exactly-one-of ( python_single_target_python2_7 python_single_target_python3_4 python_single_target_python3_5 python_single_target_python3_6 )
+kde-apps/lokalize -python_single_target_python2_7
+
+# player? ( exactly-one-of ( alsa oss openal ) )
+media-sound/wildmidi -openal
+
+# exactly-one-of ( python_single_target_python2_7 python_single_target_python3_6)
+app-text/wklej -python_single_target_python2_7 -vim
+
+# exactly-one-of ( l10n_en l10n_fr l10n_it l10n_ja l10n_nl l10n_pl )
+app-doc/kicad-doc -l10n_fr -l10n_it -l10n_nl -l10n_pl
+
+# exactly-one-of ( mysql postgres )
+net-dns/mydns postgres
+
+# exactly-one-of ( elogind systemd )
+gnome-base/gdm elogind
+gnome-base/gnome-control-center elogind
+gnome-base/gnome-settings-daemon elogind
+gnome-extra/cinnamon-session elogind
+
+# exactly-one-of ( agent hybrid local server ) at-most-one-of ( mysql postgres )
+net-analyzer/ossec-hids hybrid postgres

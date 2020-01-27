@@ -1,0 +1,9 @@
+# Calculate format=kde
+[Desktop Entry]
+Name=Lock Session
+Comment=Lock Session
+Exec=cinnamon-screensaver-command --lock
+Icon=system-lock-screen
+Terminal=false
+Type=Application
+StartupNotify=false

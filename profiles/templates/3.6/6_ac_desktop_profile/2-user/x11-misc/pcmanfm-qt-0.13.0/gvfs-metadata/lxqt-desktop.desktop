@@ -1,0 +1,9 @@
+# Calculate path=~/.config/autostart
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Gfvs trust desktop files
+Exec=/bin/bash .gvfs-trust
+X-LXQt-Module=true
+NoDisplay=true

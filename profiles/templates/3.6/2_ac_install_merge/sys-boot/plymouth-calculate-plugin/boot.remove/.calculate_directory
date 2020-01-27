@@ -1,0 +1,1 @@
+# Calculate append=remove name=boot ini(theme.splash-silent-type)!=background||ini(theme.splash-silent-picture)==||exists(#-ini(theme.splash-silent-picture)-#)==

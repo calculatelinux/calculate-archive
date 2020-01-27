@@ -1,0 +1,6 @@
+# Calculate format=kde
+
+[Desktop Entry]
+Categories=X-Leave;
+Exec=env LXQT_SESSION_CONFIG=/ lxqt-leave
+NoDisplay=false

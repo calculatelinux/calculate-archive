@@ -1,0 +1,69 @@
+# upnp? ( expat )
+media-sound/mpd expat
+
+# mikmod? ( mod )
+media-libs/sdl2-mixer mod
+
+# gimp? ( gtk )
+media-gfx/ufraw gtk
+
+# x264? ( dec_av2 ) x265? ( dec_av2 )
+x11-wm/xpra dec_av2
+
+# linguas_nl_NL? ( ljr )
+net-p2p/bitcoin-qt ljr
+
+# threads? ( caps )
+net-dns/bind caps
+
+# smtp? ( libuv )
+net-libs/libwebsockets libuv
+
+# ruby_targets_ruby22? ( ruby )
+net-irc/epic5 ruby
+
+# sasl? ( ldap )
+net-fs/autofs ldap
+
+# taglib? ( !id3tag ) id3tag? ( !taglib )
+net-misc/mediatomb -taglib
+
+# opengl? ( plasma )
+kde-frameworks/kdelibs:4 plasma
+
+# qt5? ( !libnotify )
+media-plugins/audacious-plugins -libnotify
+
+# lm-sensors? ( opencl )
+net-misc/bfgminer opencl
+
+# spell? ( exactly-one-of ( aspell enchant hunspell ) )
+net-im/vacuum -enchant
+
+# X? ( python )
+sci-geosciences/gpsd python
+
+# timidity? ( midi )
+media-libs/sdl2-mixer midi
+
+# vnc? ( fbcon )
+# pulseaudio? ( sound )
+dev-libs/efl fbcon sound
+
+# ogre? ( !opengl ) opengl? ( !ogre )
+dev-games/mygui -ogre
+
+# ssl? ( any-of ( gnutls openssl ) )
+app-admin/rsyslog openssl
+
+# inspector? ( icu )
+net-libs/nodejs icu
+
+# spell? ( client )
+net-im/swift client
+
+# png? ( lcd_devices_glcd )
+app-misc/lcdproc lcd_devices_glcd
+
+# drm? ( gles2 )
+dev-libs/efl gles2

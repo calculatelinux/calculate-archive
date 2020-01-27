@@ -1,0 +1,8 @@
+# Calculate format=openrc
+
+clock="#-os_install_clock_type-#"
+#?os_root_type!=livecd#
+clock_systohc="YES"
+#!os_root_type#
+clock_systohc="NO"
+#os_root_type#

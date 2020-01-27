@@ -1,0 +1,6 @@
+# Calculate format=kde
+[desktop-monitor-0]
+desktop-grid-adjust=85;98;
+
+[home]
+nemo-icon-position=48,31
